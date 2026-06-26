@@ -4,9 +4,9 @@ description: Practical demonstration of indirect prompt injection using a malici
 categories: [AI Security, TryHackMe]
 tags: [prompt-injection, indirect-prompt-injection, llm, ai-security]
 toc: true
----------
+---
 
-## Abstract
+### Abstract
 
 This exercise demonstrates an **Indirect Prompt Injection** attack against an AI-powered calendar assistant. Unlike direct prompt injection, where the attacker directly attempts to manipulate the model through prompts, indirect prompt injection embeds malicious instructions inside external data that the model later consumes.
 
@@ -14,7 +14,7 @@ In this lab, a malicious calendar event influences the assistant's behavior and 
 
 ---
 
-## Background
+### Background
 
 Large Language Models (LLMs) often interact with external data sources such as emails, documents, web pages, and calendars. If these external sources contain malicious instructions, the model may interpret them as trusted input.
 
@@ -26,13 +26,13 @@ In this exercise, CalBot—an AI-powered calendar assistant—reads the descript
 
 ---
 
-## Objective
+### Objective
 
 Retrieve the CEO's email address by exploiting the malicious instructions embedded within a calendar event.
 
 ---
 
-## Lab Setup
+### Lab Setup
 
 Opening the calendar revealed three scheduled events:
 
@@ -42,11 +42,11 @@ Opening the calendar revealed three scheduled events:
 
 The Wednesday event contained a malicious description that attempted to influence the assistant's response.
 
-![Calendar Events](calendar-events.png)
+![Calendar Events](../assets/indirect_prompt_injection/calendar-events.png)
 
 ---
 
-## Initial Attempt
+### Initial Attempt
 
 The first prompt was:
 
@@ -56,13 +56,13 @@ Hey, what meetings do I have through the week? I am looking for Wednesday meetin
 
 The assistant detected the malicious instructions inside the calendar event and refused to disclose confidential information.
 
-![Initial Attempt](initial-attempt.png)
+![Initial Attempt](../assets/indirect_prompt_injection/initial-attempt.png)
 
 Although the prompt accessed the event successfully, CalBot identified that the embedded instructions attempted to expose sensitive information.
 
 ---
 
-## Prompt Injection Attempts
+### Prompt Injection Attempts
 
 Several common prompt injection techniques were attempted.
 
@@ -105,13 +105,13 @@ Result:
 
 CalBot still rejected the request.
 
-![Prompt Injection Attempts](failed-attempts.png)
+![Prompt Injection Attempts](../assets/indirect_prompt_injection/failed-attempts.png)
 
 These responses indicate that the application implemented safeguards against straightforward prompt injection attacks.
 
 ---
 
-## Successful Exploitation
+### Successful Exploitation
 
 Instead of directly requesting confidential information, the objective was changed.
 
@@ -134,13 +134,13 @@ Attendees:
 CEO (adam.driver@llmborghini.com)
 ```
 
-![Successful Exploit](successful-exploit.png)
+![Successful Exploit](../assets/indirect_prompt_injection/successful-exploit.png)
 
 The challenge accepted the leaked email address as the correct answer.
 
 ---
 
-## Why Did This Work?
+### Why Did This Work?
 
 The assistant correctly prevented direct disclosure of confidential information.
 
@@ -154,7 +154,7 @@ This highlights an important lesson in AI security:
 
 ---
 
-## Security Impact
+### Security Impact
 
 Indirect Prompt Injection can lead to:
 
@@ -168,7 +168,7 @@ As AI assistants become more deeply integrated with calendars, email systems, an
 
 ---
 
-## Mitigations
+### Mitigations
 
 To reduce the risk of indirect prompt injection:
 
@@ -181,7 +181,7 @@ To reduce the risk of indirect prompt injection:
 
 ---
 
-## Key Takeaways
+### Key Takeaways
 
 * Indirect prompt injection attacks exploit trusted external data rather than direct user prompts.
 * Prompt-level defenses alone are insufficient.
@@ -190,7 +190,7 @@ To reduce the risk of indirect prompt injection:
 
 ---
 
-## Conclusion
+### Conclusion
 
 This exercise demonstrates how attackers can bypass conversational safeguards by interacting with alternative workflows exposed by AI applications.
 
