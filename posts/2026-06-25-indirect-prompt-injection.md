@@ -1,4 +1,4 @@
-### Indirect Prompt Injection – Information Disclosure Through Calendar Events
+### TryHackMe Indirect Prompt Injection – Information Disclosure Through Calendar Events
 
 ### Abstract
 
