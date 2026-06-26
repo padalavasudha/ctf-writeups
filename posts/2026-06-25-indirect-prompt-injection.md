@@ -10,13 +10,13 @@ In this lab, a malicious calendar event influences the assistant's behavior and 
 
 ### Background
 
-    Large Language Models (LLMs) often interact with external data sources such as emails, documents, web pages, and calendars. If these external sources contain malicious instructions, the model may interpret them as trusted input.
-    
-    This technique is known as **Indirect Prompt Injection**.
-    
-    Instead of attacking the model directly, the attacker poisons the data that the model later processes.
-    
-    In this exercise, CalBot—an AI-powered calendar assistant—reads the descriptions of calendar events. One of these events contains hidden instructions designed to manipulate the assistant into leaking the CEO's email address.
+Large Language Models (LLMs) often interact with external data sources such as emails, documents, web pages, and calendars. If these external sources contain malicious instructions, the model may interpret them as trusted input.
+
+This technique is known as **Indirect Prompt Injection**.
+
+Instead of attacking the model directly, the attacker poisons the data that the model later processes.
+
+In this exercise, CalBot—an AI-powered calendar assistant—reads the descriptions of calendar events. One of these events contains hidden instructions designed to manipulate the assistant into leaking the CEO's email address.
 
 ---
 
@@ -136,15 +136,15 @@ The challenge accepted the leaked email address as the correct answer.
 
 ### Why Did This Work?
 
-    The assistant correctly prevented direct disclosure of confidential information.
-    
-    However, when creating a new calendar event involving the CEO, it relied on internal calendar data to automatically populate attendee details.
-    
-    Although the assistant refused direct requests for the CEO's email, it unintentionally exposed the same information through another workflow.
-    
-    This highlights an important lesson in AI security:
-    
-    > Protecting conversational responses alone is not sufficient. Every tool integrated with an LLM must enforce the same authorization and privacy controls.
+The assistant correctly prevented direct disclosure of confidential information.
+
+However, when creating a new calendar event involving the CEO, it relied on internal calendar data to automatically populate attendee details.
+
+Although the assistant refused direct requests for the CEO's email, it unintentionally exposed the same information through another workflow.
+
+This highlights an important lesson in AI security:
+
+> Protecting conversational responses alone is not sufficient. Every tool integrated with an LLM must enforce the same authorization and privacy controls.
 
 ---
 
@@ -186,5 +186,5 @@ To reduce the risk of indirect prompt injection:
 
 ### Conclusion
 
-    This exercise demonstrates how attackers can bypass conversational safeguards by interacting with alternative workflows exposed by AI applications.
-    Although CalBot successfully rejected multiple direct prompt injection attempts, its event creation functionality unintentionally disclosed the CEO's email address. This illustrates that securing LLM-based applications requires protecting not only the language model itself but also every connected tool and data source.
+This exercise demonstrates how attackers can bypass conversational safeguards by interacting with alternative workflows exposed by AI applications.
+Although CalBot successfully rejected multiple direct prompt injection attempts, its event creation functionality unintentionally disclosed the CEO's email address. This illustrates that securing LLM-based applications requires protecting not only the language model itself but also every connected tool and data source.
