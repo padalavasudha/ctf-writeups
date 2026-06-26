@@ -1,14 +1,8 @@
 ### Indirect Prompt Injection – Information Disclosure Through Calendar Events
----
-description: Practical demonstration of indirect prompt injection using a malicious calendar event.
-categories: [AI Security, TryHackMe]
-tags: [prompt-injection, indirect-prompt-injection, llm, ai-security]
-toc: true
----
 
 ### Abstract
 
-    This exercise demonstrates an **Indirect Prompt Injection** attack against an AI-powered calendar assistant. Unlike direct prompt injection, where the attacker directly attempts to manipulate the model through prompts, indirect prompt injection embeds malicious instructions inside external data that the model later consumes.
+This exercise demonstrates an **Indirect Prompt Injection** attack against an AI-powered calendar assistant. Unlike direct prompt injection, where the attacker directly attempts to manipulate the model through prompts, indirect prompt injection embeds malicious instructions inside external data that the model later consumes.
 
 In this lab, a malicious calendar event influences the assistant's behavior and ultimately leads to the disclosure of confidential information.
 
