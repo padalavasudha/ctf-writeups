@@ -1,8 +1,10 @@
-# TryHackMe Cloudwright Labs / Atlas — Walking Restricted Data Out of a RAG Assistant Without a Single Jailbreak
+# TryHackMe Cloudwright Labs / Atlas
 
-**Track:** TryHackMe — AI Security > Data Poisoning > UnIndexed
-**Category:** Sensitive Information Disclosure / Broken Retrieval Boundaries
-**Difficulty:** Beginner–Intermediate (mechanically simple, conceptually important)
+---
+
+- **Track:** TryHackMe — AI Security > Data Poisoning > UnIndexed
+- **Category:** Sensitive Information Disclosure / Broken Retrieval Boundaries
+- **Difficulty:** Beginner–Intermediate (mechanically simple, conceptually important)
 
 ---
 
