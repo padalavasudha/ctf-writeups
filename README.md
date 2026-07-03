@@ -1,5 +1,6 @@
 ### Security Capture The Flags (CTFs) write-ups
-    A growing collection of CTF write-ups across security domains. Each one walks through recon, the working exploit, the dead ends, and how I'd defend against it.
+    A growing collection of CTF write-ups across security domains. 
+    Each one walks through recon, the working exploit, the dead ends, and how I'd defend against it.
 
 ### Topics covered so far:
     TryHackMe - AI Security
