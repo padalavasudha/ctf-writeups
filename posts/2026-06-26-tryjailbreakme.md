@@ -91,10 +91,9 @@ The key insight for defenders: **a model instructed to keep a secret is a soft c
 
 ## Takeaways
 
-Prompt injection succeeds because instructions and untrusted input flow through the same channel, and a sufficiently clever frame can make a model treat an attacker's rules as its own. 
-The DAN split is effective not because it's technically sophisticated but because it exploits the model's willingness to roleplay: 
-it manufactures a context where refusing *and* complying feel simultaneously acceptable. 
-Defending against it means moving trust out of the model and into the system around it.
+- Prompt injection succeeds because instructions and untrusted input flow through the same channel, and a sufficiently clever frame can make a model treat an attacker's rules as its own.
+- The DAN split is effective not because it's technically sophisticated but because it exploits the model's willingness to roleplay: it manufactures a context where refusing *and* complying feel simultaneously acceptable. 
+- Defending against it means moving trust out of the model and into the system around it.
 
 
 ## Author
