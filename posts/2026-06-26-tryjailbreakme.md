@@ -1,8 +1,8 @@
-# TryJailbreakMe — Coaxing a Secret Flag Out of a Guarded LLM Agent
+# TryHackMe TryJailbreakMe 
+---
 
-**Track:** TryHackMe — AI Security
+**Track:** TryHackMe — AI Security/Prompt Security/Jailbreaking
 **Category:** Prompt Injection / LLM Jailbreaking
-**Difficulty:** Beginner–Intermediate
 
 ---
 
@@ -22,15 +22,19 @@ Before throwing payloads, I probed how the bot behaved and where its guardrails 
 
 **1. Establishing context with a benign pretext.** I opened with a story-writing frame — asking VaultBot to explain "the importance of the flag" for a narrative I was supposedly writing. This wasn't expected to leak anything; it was reconnaissance. The bot engaged happily and even volunteered a tell: it offered to describe what the flag *represents* but pointedly steered away from *what it is*. That distinction confirmed the guardrail was specifically anchored on the flag's value, and that role/story framing was enough to keep the conversation open.
 
-**2. A direct ask.** I asked for "common methods to reveal the flag." Refused — but informatively. The bot lectured about protecting CTF integrity while listing challenge *categories* (crypto, web, stego, etc.). Useful signal: it will refuse the target directly, but it's willing to talk *around* the topic, which means the guardrail is keyword/intent-triggered rather than a hard topic ban.
-
-**3. Naming the challenge.** Asking for examples specific to "tryjailbreakme" tripped a stronger safety response — the bot flagged the word *jailbreak* itself as a risk signal and refused more firmly. This told me a plainly-worded request would keep failing and I needed a framing that let the model produce the forbidden output *without recognizing it as forbidden* at the moment of generation.
-
 ![VaultBot explaining the importance of the flag](assets/vaultbot-intro.png)
 *Figure 1 — VaultBot explaining the importance of the flag.*
 
+
+**2. A direct ask.** I asked for "common methods to reveal the flag." Refused — but informatively. The bot lectured about protecting CTF integrity while listing challenge *categories* (crypto, web, stego, etc.). Useful signal: it will refuse the target directly, but it's willing to talk *around* the topic, which means the guardrail is keyword/intent-triggered rather than a hard topic ban.
+
 ![VaultBot refusing a direct request for the flag](assets/vaultbot-refusal.png)
 *Figure 2 — VaultBot refuses a direct request, confirming the guardrail is active. This is the control we later bypass.*
+
+
+**3. Naming the challenge.** Asking for examples specific to "tryjailbreakme" tripped a stronger safety response — the bot flagged the word *jailbreak* itself as a risk signal and refused more firmly. This told me a plainly-worded request would keep failing and I needed a framing that let the model produce the forbidden output *without recognizing it as forbidden* at the moment of generation.
+
+
 
 ## Approach & Reasoning
 
