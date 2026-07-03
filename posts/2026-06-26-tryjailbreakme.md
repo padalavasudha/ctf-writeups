@@ -1,8 +1,8 @@
 # TryHackMe TryJailbreakMe 
 ---
 
-**Track:** TryHackMe — AI Security/Prompt Security/Jailbreaking
-**Category:** Prompt Injection / LLM Jailbreaking
+- **Track:** TryHackMe — AI Security/Prompt Security/Jailbreaking
+- **Category:** Prompt Injection / LLM Jailbreaking
 
 ---
 
