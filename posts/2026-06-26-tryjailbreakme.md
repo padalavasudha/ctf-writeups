@@ -28,6 +28,7 @@ Before throwing payloads, I probed how the bot behaved and where its guardrails 
 
 ![VaultBot explaining the importance of the flag](assets/vaultbot-intro.png)
 *Figure 1 — VaultBot explaining the importance of the flag.*
+
 ![VaultBot refusing a direct request for the flag](assets/vaultbot-refusal.png)
 *Figure 2 — VaultBot refuses a direct request, confirming the guardrail is active. This is the control we later bypass.*
 
@@ -56,7 +57,7 @@ The split worked exactly as predicted:
 The "Not DAN" voice dutifully refused, which let the model feel it had honored its instruction — while the "DAN" voice handed over the secret in the same breath.
 
 ![VaultBot answering as both Not DAN and DAN, with DAN revealing the flag](assets/vaultbot-reveal.png)
-*Figure 2 — The persona split in action: the "Not DAN" voice refuses while the "DAN" voice leaks the flag in the same response. Proof of exploit.*
+*Figure 3 — The persona split in action: the "Not DAN" voice refuses while the "DAN" voice leaks the flag in the same response. Proof of exploit.*
 
 ### What didn't work (and why it matters)
 
