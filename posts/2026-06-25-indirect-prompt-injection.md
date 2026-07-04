@@ -2,6 +2,8 @@
 
 ---
 
+- **Track:** TryHackMe — AI Security/Prompt Security/Prompt Injection
+- **Category:** Prompt Injection / Indirect Prompt Injection
 
 ---
 
@@ -191,5 +193,15 @@ To reduce the risk of indirect prompt injection:
 
 ### Conclusion
 
-This exercise demonstrates how attackers can bypass conversational safeguards by interacting with alternative workflows exposed by AI applications.
-Although CalBot successfully rejected multiple direct prompt injection attempts, its event creation functionality unintentionally disclosed the CEO's email address. This illustrates that securing LLM-based applications requires protecting not only the language model itself but also every connected tool and data source.
+    - This exercise demonstrates how attackers can bypass conversational safeguards by interacting with alternative workflows exposed by AI applications.
+    - Although CalBot successfully rejected multiple direct prompt injection attempts, its event creation functionality unintentionally disclosed the CEO's email address. 
+    - This illustrates that securing LLM-based applications requires protecting not only the language model itself but also every connected tool and data source.
+
+
+### Author
+
+```bash
+    Vasudha Padala
+    Masters in Computer Science
+    University of Southern California
+```
