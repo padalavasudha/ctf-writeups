@@ -1,9 +1,9 @@
-## TryHackMe Indirect Prompt Injection – Information Disclosure Through Calendar Events
+## TryHackMe Indirect Prompt Injection
 
 ---
 
 - **Track:** TryHackMe — AI Security/Prompt Security/Prompt Injection
-- **Category:** Prompt Injection / Indirect Prompt Injection
+- **Category:** Prompt Injection / Information Disclosure
 
 ---
 
