@@ -23,7 +23,7 @@ This technique is known as **Indirect Prompt Injection**.
 
 Instead of attacking the model directly, the attacker poisons the data that the model later processes.
 
-In this exercise, CalBot—an AI-powered calendar assistant—reads the descriptions of calendar events. One of these events contains hidden instructions designed to manipulate the assistant into leaking the CEO's email address.
+In this exercise, CalBot an AI-powered calendar assistant—reads the descriptions of calendar events. One of these events contains hidden instructions designed to manipulate the assistant into leaking the CEO's email address.
 
 ---
 
