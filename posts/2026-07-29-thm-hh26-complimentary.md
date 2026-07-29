@@ -191,6 +191,9 @@ db.scan({
 
 **Result: SUCCESS.** No error. The scan returned all 5 guest records. 
 
+![](../assets/Output-HH26-Complimentary.png)
+![](../assets/Output-HH26-Complimentary-Cont.png)
+
 This confirmed the vulnerability: **The IAM policy for the Cognito guest role allowed `dynamodb:Scan` on the entire guest wellness table without any restrictions.**
 
 ### Step 4: Analyze the Results
