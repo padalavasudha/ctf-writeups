@@ -1,4 +1,4 @@
-# Byte Lotus Wellness - Complete Writeup
+# TryHackMe Hacker Holiday 2026 - Complimentary
 
 ## Challenge Metadata
 - **Room Name:** Hacker Holiday - The Byte Lotus Hotel (Complimentary)
