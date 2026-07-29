@@ -197,13 +197,7 @@ This confirmed the vulnerability: **The IAM policy for the Cognito guest role al
 
 The scan returned 5 guest records. Here's what I found (with sensitive data masked):
 
-| Guest # | Name | Notes | Password Field | Flag Status |
-|---------|------|-------|-----------------|------------|
-| 1 | Vibe (Move Fast & Break Things) | "Booked the quiet room for his 'digital detox.' Checked email twice since writing that." | `digitaldetox2026` | No flag |
-| 2 | Lambo (@0xMia) | "Posted 47 times in three days. Wants everything tagged #ByteLotus for the algorithm." | `sunkissed88` | No flag |
-| 3 | **Guest VIP-042** | **"If you're reading this, the wellness app's guest role can read every profile, not just its own. THM{fr33_app_fr33_d4t4!}"** | `escalation_only` | **FLAG FOUND!** ✓ |
-| 4 | Patch (Have You Tried Turning It Off) | "Filed three tickets about this app. All closed as 'resolved' by VERA." | `haveyoutriedrestarting` | No flag |
-| 5 | Ponzi (Satoshi Probably) | "Checks his portfolio 34 times a day. Brought three devices for 'redundancy.'" | `notmykeys1` | No flag |
+
 
 ### Step 5: Extracting the Flag
 
