@@ -354,7 +354,8 @@ An **Identity Pool** is AWS's way of handing out temporary, limited credentials 
 | 7 | DynamoDB receives the request | DynamoDB checks the IAM policy |
 | 8 | IAM policy allows `dynamodb:GetItem` | Request is approved ✓ |
 | 9 | DynamoDB returns the user's record | Browser displays the data |
-| **EXPLOITATION BEGINS** | | |
+
+**EXPLOITATION BEGINS** 
 | 10 | Attacker opens console | Attacker has access to the same credentials |
 | 11 | Attacker calls `dynamodb.scan()` | Browser signs the request with the credentials |
 | 12 | DynamoDB receives the scan request | DynamoDB checks the IAM policy |
