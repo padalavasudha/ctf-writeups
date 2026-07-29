@@ -219,7 +219,7 @@ The flag was deliberately placed there by the challenge creator to guide you tow
 THM{fr33_app_fr33_d4t4!}
 ```
 
-**Interpretation:** "Free app, free data!" — A commentary on how "free" and "frictionless" services often trade user privacy for convenience.
+**Interpretation:** "Free app, free data!" A commentary on how "free" and "frictionless" services often trade user privacy for convenience.
 
 ---
 
@@ -300,7 +300,7 @@ Instead of:
 5. "We can add proper auth later"
 
 **What they missed:**
-- Credentials are credentials—they're valid regardless of who uses them
+- Credentials are credentials, they're valid regardless of who uses them
 - "Later" never comes, and shortcuts become permanent
 - Permissive policies are hard to fix once users rely on them
 
