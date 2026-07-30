@@ -1,5 +1,3 @@
----
-
 # TryHackMe Hacker Holiday 2026 - Complimentary
 
 ## Challenge Metadata
