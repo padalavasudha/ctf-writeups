@@ -3,7 +3,7 @@
 # THM HH26 - Packed Light
 
 ## Challenge Metadata
-- **Room Name:** Hacker Holiday26 - Packed Light
+- **Room Name:** Hacker Holiday 26 - Packed Light
 - **Difficulty Level:** Easy 
 - **Category:** Forensics
 - **Point Value:** 60 pts
