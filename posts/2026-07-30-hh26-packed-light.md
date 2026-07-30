@@ -1,9 +1,9 @@
 ---
 
-# THM HH26 - Packed Light
+# TryHackMe Hacker Holiday 2026 - Complimentary
 
 ## Challenge Metadata
-- **Room Name:** Hacker Holiday 26 - Packed Light
+- **Room Name:** Hacker Holiday - Packed Light
 - **Difficulty Level:** Easy 
 - **Category:** Forensics
 - **Point Value:** 60 pts
