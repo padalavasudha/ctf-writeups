@@ -67,7 +67,9 @@ Content-type: text/x-python
 Content-Length: 1086
 ```
 
-This is a **malicious Python script being downloaded**. To extract this \temp\updates.py, Navigate to File > Export Objects > HTTP 
+This is a **malicious Python script being downloaded**. 
+To extract this \temp\updates.py, Navigate to File > Export Objects > HTTP..
+
 ![](../assets/packed-light-req-export-http.png)
 
 ### Step 2: Extracting the Malware Code
